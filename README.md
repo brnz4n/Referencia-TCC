@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/página.png" width="300">
+  <img src="assets/página.png" width="900">
 </p>
 
 Referencia-TCC
