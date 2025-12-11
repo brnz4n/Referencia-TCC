@@ -1,0 +1,96 @@
+:root {
+    /* Paleta Ravena */
+    --raven-dark: #1a0b2e;
+    --raven-purple: #4b0082;
+    --raven-light: #8a2be2;
+    --raven-grey: #6c757d;
+    --text-color: #f8f9fa;
+}
+
+body {
+    background-color: #f4f1f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Configuração da Animação --- */
+.anime-start {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.anime-end {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Estilos do Cabeçalho --- */
+.header-raven {
+    background: linear-gradient(135deg, var(--raven-dark) 0%, var(--raven-purple) 100%);
+    color: white;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(75, 0, 130, 0.4);
+    border-bottom: 5px solid var(--raven-light);
+}
+
+.tcc-title {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.search-icon-box {
+    background-color: white;
+    color: var(--raven-purple);
+    border: 1px solid #ced4da;
+    border-right: none;
+}
+
+.form-control:focus {
+    border-color: var(--raven-light);
+    box-shadow: 0 0 0 0.25rem rgba(138, 43, 226, 0.25);
+}
+
+.card-reference {
+    border: none;
+    border-left: 5px solid var(--raven-purple);
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.card-reference:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(75, 0, 130, 0.15);
+    border-left-color: var(--raven-light);
+}
+
+.author-highlight {
+    font-weight: bold;
+    color: var(--raven-purple);
+}
+
+.btn-raven {
+    background-color: var(--raven-purple);
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-raven:hover {
+    background-color: var(--raven-light);
+    color: white;
+}
+
+/* Tag para livros físicos */
+.badge-book {
+    background-color: var(--raven-grey);
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    color: var(--raven-purple);
+    font-size: 0.9rem;
+}
